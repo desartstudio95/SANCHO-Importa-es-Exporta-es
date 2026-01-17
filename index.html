@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-MZ" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>SANCHO – Importações & Exportações LDA</title>
+    <meta name="description" content="Soluções completas em Máquinas, Equipamentos Industriais e Logística em Moçambique." />
+    
+    <!-- Tailwind via CDN para garantir estilização rápida sem configuração complexa de PostCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1280px',
+            '2xl': '1536px',
+          },
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: '1rem',
+              sm: '2rem',
+              lg: '4rem',
+              xl: '5rem',
+              '2xl': '6rem',
+            },
+          },
+          extend: {
+            colors: {
+              sancho: {
+                primary: '#0B2545', // Deep Navy Blue
+                'primary-dark': '#061830', 
+                secondary: '#1E3A8A', // Brighter Navy
+                accent: '#00A8E8', // Bright Cyan
+                'accent-hover': '#0284C7',
+                yellow: '#FFC107', // CTA Yellow
+                'yellow-hover': '#F59E0B',
+                'yellow-light': '#FEF3C7',
+                light: '#F8FAFC',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-sancho-accent selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
